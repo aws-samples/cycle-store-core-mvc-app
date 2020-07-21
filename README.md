@@ -1,11 +1,6 @@
-## My Project
+## Overview of solution
 
-TODO: Fill this README out!
-
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
+This is the second installment of two series blogs where you will take steps to migrate and containerize a modernized enterprise application. In the first part of the post you have already migrated the legacy MVC ASP.NET application to ASP.NET Core in the previous application, you will now modernize the same application as docker container and host it in the Amazon ECS Cluster.
 
 ## Security
 

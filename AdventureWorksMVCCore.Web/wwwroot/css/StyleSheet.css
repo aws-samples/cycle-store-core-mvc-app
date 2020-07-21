@@ -1,0 +1,1970 @@
+﻿html {
+    color: #000;
+    background: #FFF;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+del, ins {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: baseline;
+}
+
+sub {
+    vertical-align: baseline;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+    color: #000;
+}
+
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input, button, textarea, select {
+    *font-size: 100%;
+}
+
+
+
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.7.0
+*/
+html {
+    color: #000;
+    background: #FFF;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+del, ins {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: baseline;
+}
+
+sub {
+    vertical-align: baseline;
+}
+
+legend {
+    color: #000;
+}
+
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+input, button, textarea, select {
+    *font-size: 100%;
+}
+
+body {
+    font: 13px/1.231 arial,helvetica,clean,sans-serif;
+    *font-size: small;
+    *font: x-small;
+}
+
+select, input, button, textarea, button {
+    font: 99% arial,helvetica,clean,sans-serif;
+}
+
+table {
+    font-size: inherit;
+    font: 100%;
+}
+
+pre, code, kbd, samp, tt {
+    font-family: monospace;
+    *font-size: 108%;
+    line-height: 100%;
+}
+
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.7.0
+*/
+/**
+ * YUI Grids
+ * @module grids
+ * @namespace yui-
+ * @requires reset, fonts
+ */
+
+/**  
+ * Note: Throughout this file, the *property (star-property) filter is used 
+ * to give a value to IE that other browsers do not see. _property is only seen 
+ * by IE7, so the combo of *prop and _prop can target between IE6 and IE7.
+ * 
+ * More information on these filters and related validation errors:
+ * http://tech.groups.yahoo.com/group/ydn-javascript/message/40059
+ */
+
+/**
+ * Section: General Rules
+ */
+
+body {
+    text-align: center;
+}
+
+/**
+ * Section: Page Width Rules (#doc, #doc2, #doc3, #doc4)
+ */
+
+#doc, #doc2, #doc3, #doc4, .yui-t1, .yui-t2, .yui-t3, .yui-t4, .yui-t5, .yui-t6, .yui-t7 {
+    margin: auto;
+    text-align: left;
+    width: 57.69em;
+    *width: 56.25em;
+}
+
+/* 950 Centered (doc2) */
+#doc2 {
+    width: 73.076em;
+    *width: 71.25em;
+}
+
+.mainContainer {
+    width: 100%;
+}
+
+    .mainContainer .content .wijmo-wijtabs {
+        background-color: #333;
+        color: rgb(0, 153, 204)
+    }
+
+    .mainContainer .content .mainPage {
+        background-color: #f2f2f2;
+    }
+
+    .mainContainer .content .wijmo-wijtabs ul.ui-widget-header {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .mainContainer .content .ui-tabs-panel {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .mainContainer .content .wijmo-wijtabs .ui-tabs-nav, .mainContainer .content .wijmo-wijtabs .ui-tabs-nav li {
+        border: 0;
+        background-image: none;
+        box-shadow: none;
+    }
+
+        .mainContainer .content .wijmo-wijtabs .ui-tabs-nav .ui-tabs-active {
+            background: #09c
+        }
+
+    .mainContainer .content #menuContainer {
+        padding-top: 3px;
+        background: #09c
+    }
+
+    .mainContainer .content .menuWrapper {
+        background-color: #007399;
+    }
+
+    .mainContainer .content #menuContainer .wijmo-wijmenu {
+        background: #007399;
+        width: 960px;
+        margin: 0 auto;
+        border: 0;
+    }
+
+        .mainContainer .content #menuContainer .wijmo-wijmenu .ui-state-focus,
+        .mainContainer .content #menuContainer .wijmo-wijmenu .ui-state-default,
+        .mainContainer .content #menuContainer .wijmo-wijmenu .ui-state-hover {
+            background: #007399;
+            border-color: #007399;
+            box-shadow: none;
+            font-family: 'Segoe UI', Myriad, 'Myriad Pro', Calibri, Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .mainContainer .content #menuContainer .wijmo-wijmenu .ui-state-focus {
+            font-weight: 800;
+        }
+
+    .mainContainer .content .wijmo-wijtabs .ui-widget-header a {
+        color: #fff;
+    }
+
+.mainContent {
+}
+
+    .mainContent .SubCategoryContainer {
+        width: 73.076em;
+        *width: 71.25em;
+        margin: 0 auto;
+    }
+
+#bd .SubCategoryContainer .wijmo-wijcarousel {
+    margin-top: 10px;
+}
+
+    #bd .SubCategoryContainer .wijmo-wijcarousel .wijmo-wijcarousel-item {
+        background-color: #fff;
+    }
+
+body .wijmo-wijexpander .ui-expander-content-active {
+    padding: 5px;
+}
+
+body .wijmo-wijexpander .wijmo-wijmenu {
+    width: 100%;
+    background-color: #fff;
+    color: #09c;
+    border: none;
+}
+
+/* 100% (doc3) */
+#doc3 { /**  * Left and Right margins are not a structural part of Grids. Without them   * Grids works fine, but content bleeds to the very edge of the document, which  * often impairs readability and usability. They are provided because they   * prevent the content from "bleeding" into the browser's chrome.   */
+    margin: auto 10px;
+    width: auto;
+}
+
+/* 974 Centered (doc4) */
+#doc4 {
+    width: 74.923em;
+    *width: 73.05em;
+}
+
+/**
+ * Section: Preset Template Rules (.yui-t[1-6])
+ */
+
+
+.yui-b { /* to preserve source-order independence for Gecko */
+    position: relative;
+}
+
+.yui-b {
+    /* to preserve source-order independence for IE */
+    _position: static;
+}
+
+#yui-main .yui-b {
+    /* to preserve source-order independence for Gecko */
+    position: static;
+}
+
+#yui-main, .yui-g .yui-u .yui-g {
+    width: 100%;
+}
+
+.yui-t1 #yui-main, .yui-t2 #yui-main, .yui-t3 #yui-main {
+    float: right; /* IE: preserve layout at narrow widths */
+    margin-left: -25em;
+}
+
+.yui-t4 #yui-main, .yui-t5 #yui-main, .yui-t6 #yui-main {
+    float: left; /* IE: preserve layout at narrow widths */
+    margin-right: -25em;
+}
+
+/** 
+ * For Specific Template Presets
+ */
+
+.yui-t1 .yui-b {
+    float: left;
+    width: 12.30769em;
+    *width: 12.00em;
+}
+
+.yui-t1 #yui-main .yui-b {
+    margin-left: 13.30769em;
+    *margin-left: 13.05em;
+}
+
+.yui-t2 .yui-b {
+    float: left;
+    width: 13.8461em;
+    *width: 13.50em;
+}
+
+.yui-t2 #yui-main .yui-b {
+    margin-left: 14.8461em;
+    *margin-left: 14.55em;
+}
+
+.yui-t3 .yui-b {
+    float: left;
+    width: 23.0769em;
+    *width: 22.50em;
+}
+
+.yui-t3 #yui-main .yui-b {
+    margin-left: 24.0769em;
+    *margin-left: 23.62em;
+}
+
+.yui-t4 .yui-b {
+    float: right;
+    width: 13.8456em;
+    *width: 13.50em;
+}
+
+.yui-t4 #yui-main .yui-b {
+    margin-right: 14.8456em;
+    *margin-right: 14.55em;
+}
+
+.yui-t5 .yui-b {
+    float: right;
+    width: 18.4615em;
+    *width: 18.00em;
+}
+
+.yui-t5 #yui-main .yui-b {
+    margin-right: 19.4615em;
+    *margin-right: 19.125em;
+}
+
+.yui-t6 .yui-b {
+    float: right;
+    width: 23.0769em;
+    *width: 22.50em;
+}
+
+.yui-t6 #yui-main .yui-b {
+    margin-right: 24.0769em;
+    *margin-right: 23.62em;
+}
+
+.yui-t7 #yui-main .yui-b {
+    display: block;
+    margin: 0 0 1em 0;
+}
+
+#yui-main .yui-b {
+    float: none;
+    width: auto;
+}
+
+/**
+ * Section: Grids and Nesting Grids
+ */
+
+/* Children generally take half the available space */
+.yui-gb .yui-u, .yui-g .yui-gb .yui-u, .yui-gb .yui-g, .yui-gb .yui-gb, .yui-gb .yui-gc, .yui-gb .yui-gd, .yui-gb .yui-ge, .yui-gb .yui-gf, .yui-gc .yui-u, .yui-gc .yui-g, .yui-gd .yui-u {
+    float: left;
+}
+
+/* Float units (and sub grids) to the right */
+.yui-g .yui-u, .yui-g .yui-g, .yui-g .yui-gb, .yui-g .yui-gc, .yui-g .yui-gd, .yui-g .yui-ge, .yui-g .yui-gf, .yui-gc .yui-u, .yui-gd .yui-g, .yui-g .yui-gc .yui-u, .yui-ge .yui-u, .yui-ge .yui-g, .yui-gf .yui-g, .yui-gf .yui-u {
+    float: right;
+}
+
+    /*Float units (and sub grids) to the left */
+    .yui-g div.first, .yui-gb div.first, .yui-gc div.first, .yui-gd div.first, .yui-ge div.first, .yui-gf div.first, .yui-g .yui-gc div.first, .yui-g .yui-ge div.first, .yui-gc div.first div.first {
+        float: left;
+    }
+
+.yui-g .yui-u, .yui-g .yui-g, .yui-g .yui-gb, .yui-g .yui-gc, .yui-g .yui-gd, .yui-g .yui-ge, .yui-g .yui-gf {
+    width: 49.1%;
+}
+
+    .yui-gb .yui-u, .yui-g .yui-gb .yui-u, .yui-gb .yui-g, .yui-gb .yui-gb, .yui-gb .yui-gc, .yui-gb .yui-gd, .yui-gb .yui-ge, .yui-gb .yui-gf, .yui-gc .yui-u, .yui-gc .yui-g, .yui-gd .yui-u {
+        width: 32%;
+        margin-left: 1.99%;
+    }
+
+/* Give IE some extra breathing room for 1/3-based rounding issues */
+.yui-gb .yui-u {
+    *margin-left: 1.9%;
+    *width: 31.9%;
+}
+
+.yui-gc div.first, .yui-gd .yui-u {
+    width: 66%;
+}
+
+.yui-gd div.first {
+    width: 32%;
+}
+
+.yui-ge div.first, .yui-gf .yui-u {
+    width: 74.2%;
+}
+
+.yui-ge .yui-u, .yui-gf div.first {
+    width: 24%;
+}
+
+.yui-g .yui-gb div.first, .yui-gb div.first, .yui-gc div.first, .yui-gd div.first {
+    margin-left: 0;
+}
+
+/**
+ * Section: Deep Nesting 
+ */
+
+.yui-g .yui-g .yui-u, .yui-gb .yui-g .yui-u, .yui-gc .yui-g .yui-u, .yui-gd .yui-g .yui-u, .yui-ge .yui-g .yui-u, .yui-gf .yui-g .yui-u {
+    width: 49%;
+    *width: 48.1%;
+    *margin-left: 0;
+}
+
+.yui-g .yui-g .yui-u {
+    width: 48.1%;
+}
+
+/*SF 1927599 from 1.14 to 2.6.0*/
+.yui-g .yui-gb div.first, .yui-gb .yui-gb div.first {
+    *margin-right: 0;
+    *width: 32%;
+    _width: 31.7%;
+}
+
+.yui-g .yui-gc div.first, .yui-gd .yui-g {
+    width: 66%;
+}
+
+.yui-gb .yui-g div.first {
+    *margin-right: 4%;
+    _margin-right: 1.3%;
+}
+
+.yui-gb .yui-gc div.first, .yui-gb .yui-gd div.first {
+    *margin-right: 0;
+}
+
+.yui-gb .yui-gb .yui-u, .yui-gb .yui-gc .yui-u {
+    *margin-left: 1.8%;
+    _margin-left: 4%;
+}
+
+.yui-g .yui-gb .yui-u {
+    _margin-left: 1.0%;
+}
+
+.yui-gb .yui-gd .yui-u {
+    *width: 66%;
+    _width: 61.2%;
+}
+
+.yui-gb .yui-gd div.first {
+    *width: 31%;
+    _width: 29.5%;
+}
+
+.yui-g .yui-gc .yui-u, .yui-gb .yui-gc .yui-u {
+    width: 32%;
+    _float: right;
+    margin-right: 0;
+    _margin-left: 0;
+}
+
+.yui-gb .yui-gc div.first {
+    width: 66%;
+    *float: left;
+    *margin-left: 0;
+}
+
+.yui-gb .yui-ge .yui-u, .yui-gb .yui-gf .yui-u {
+    margin: 0;
+}
+
+.yui-gb .yui-gb .yui-u {
+    _margin-left: .7%;
+}
+
+.yui-gb .yui-g div.first, .yui-gb .yui-gb div.first {
+    *margin-left: 0;
+}
+
+.yui-gc .yui-g .yui-u, .yui-gd .yui-g .yui-u {
+    *width: 48.1%;
+    *margin-left: 0;
+}
+
+.yui-gb .yui-gd div.first {
+    width: 32%;
+}
+
+.yui-g .yui-gd div.first {
+    _width: 29.9%;
+}
+
+.yui-ge .yui-g {
+    width: 24%;
+}
+
+.yui-gf .yui-g {
+    width: 74.2%;
+}
+
+.yui-gb .yui-ge div.yui-u, .yui-gb .yui-gf div.yui-u {
+    float: right;
+}
+
+.yui-gb .yui-ge div.first, .yui-gb .yui-gf div.first {
+    float: left;
+}
+
+/* Width Accommodation for Nested Contexts */
+.yui-gb .yui-ge .yui-u, .yui-gb .yui-gf div.first {
+    *width: 24%;
+    _width: 20%;
+}
+
+/* Width Accommodation for Nested Contexts */
+.yui-gb .yui-ge div.first, .yui-gb .yui-gf .yui-u {
+    *width: 73.5%;
+    _width: 65.5%;
+}
+
+/* Patch for GD within GE */
+.yui-ge div.first .yui-gd .yui-u {
+    width: 65%;
+}
+
+.yui-ge div.first .yui-gd div.first {
+    width: 32%;
+}
+
+/* @group Clearing */
+#hd:after, #bd:after, #ft:after, .yui-g:after, .yui-gb:after, .yui-gc:after, .yui-gd:after, .yui-ge:after, .yui-gf:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#hd, #bd, #ft, .yui-g, .yui-gb, .yui-gc, .yui-gd, .yui-ge, .yui-gf {
+    zoom: 1;
+}
+
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.7.0
+*/
+/**
+ * YUI Base
+ * @module base
+ * @namespace yui-
+ * @requires reset, fonts
+*/
+
+body {
+    /* For breathing room between content and viewport. */
+    margin: 10px;
+}
+
+h1 {
+    /* 18px via YUI Fonts CSS foundation. */
+    font-size: 138.5%;
+}
+
+h2 {
+    /* 16px via YUI Fonts CSS foundation. */
+    font-size: 123.1%;
+}
+
+h3 {
+    /* 14px via YUI Fonts CSS foundation. */
+    font-size: 108%;
+}
+
+h1, h2, h3 {
+    /* Top & bottom margin based on font size. */
+    margin: 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong, dt {
+    /* Bringing boldness back to headers and the strong element. */
+    font-weight: bold;
+}
+
+optgroup {
+    font-weight: normal;
+}
+
+abbr, acronym {
+    /* Indicating to users that more info is available. */
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+em {
+    /* Bringing italics back to the em element. */
+    font-style: italic;
+}
+
+del {
+    /* Striking deleted phrases. */
+    text-decoration: line-through;
+}
+
+blockquote, ul, ol, dl {
+    /* Giving blockquotes and lists room to breath. */
+    margin: 1em;
+}
+
+ol, ul, dl {
+    /* Bringing lists on to the page with breathing room. */
+    margin-left: 2em;
+}
+
+    ol li {
+        /* Giving OL's LIs generated numbers. */
+        list-style: decimal outside;
+    }
+
+    ul li {
+        /* Giving UL's LIs generated disc markers. */
+        /*list-style: disc outside;*/
+    }
+
+    dl dd {
+        /* Giving UL's LIs generated numbers. */
+        margin-left: 1em;
+    }
+
+th, td {
+    /* Borders and padding to make the table readable. */
+}
+
+th {
+    /* Distinguishing table headers from data cells. */
+    font-weight: bold;
+    text-align: center;
+}
+
+caption {
+    /* Coordinated margin to match cell's padding. */
+    margin-bottom: .5em; /* Centered so it doesn't blend in to other content. */
+    text-align: center;
+}
+
+sup {
+    /* to preserve line-height and selector appearance */
+    vertical-align: super;
+}
+
+sub {
+    /* to preserve line-height and selector appearance */
+    vertical-align: sub;
+}
+
+p, fieldset, pre {
+    /* So things don't run into each other. */
+    margin-bottom: 1em;
+}
+/* Opera requires 1px of passing to render with contemporary native chrome */
+button, input[type="checkbox"], input[type="radio"], input[type="reset"], input[type="submit"] {
+    padding: 1px;
+}
+
+html {
+    background: #f2f2f2;
+}
+
+body, body .ui-widget {
+    background: #f2f2f2;
+    color: #333;
+    font-family: Segoe UI, Myriad, Myriad Pro, Calibri, Arial, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:link, a:active, a:visited {
+    color: #04b2ef;
+    text-decoration: none;
+}
+
+    a:hover, a:focus {
+        color: #04b2ef;
+        text-decoration: underline;
+    }
+
+fieldset {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    padding: .5em;
+}
+
+legend {
+    margin: 0 .5em;
+}
+
+label {
+    display: block;
+}
+
+.homepage {
+    /*background: #646464;*/
+}
+
+    .homepage #bd {
+        min-height: 120px;
+    }
+
+#hd {
+    background: #646464 url(/Images/header_bg.png) no-repeat center top;
+    display: block;
+    padding: 0;
+    position: relative;
+    zoom: 1;
+}
+
+.homepage #hd {
+    height: 100px;
+}
+
+#bd {
+    min-height: 500px;
+}
+
+.content-mid {
+    min-height: 400px;
+}
+
+#ft {
+    background: #333;
+    clear: both;
+    color: #fafafa;
+    font-size: .9em;
+    margin: 1em 0 0;
+    padding: 0 0 1em;
+    text-align: left;
+}
+
+.footerinner {
+    margin: 0 auto;
+    padding: 10px;
+    width: 960px;
+}
+
+#hd h2 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+    #hd h2 a, #hd h2 a:active, #hd h2 a:hover, #hd h2 a:focus #hd h2 a:visited {
+        color: #fff;
+        outline: none;
+        text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    }
+
+.content {
+    background-color: white;
+    color: #ffac00;
+    outline: none;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+
+.hd-header {
+    color: #fff;
+    outline: none;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+}
+
+#hd #mainMenuContainer .wijmo-wijmenu {
+    background: #333;
+    clear: both;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 3px #04b2ef;
+}
+
+    #hd #mainMenuContainer .wijmo-wijmenu .wijmo-wijmenu-list {
+        margin: 0 auto;
+        padding: 0;
+        width: 960px !important;
+    }
+
+        #hd #mainMenuContainer .wijmo-wijmenu .wijmo-wijmenu-list .wijmo-wijmenu-item {
+            margin: 0;
+            padding: 0 .25em;
+        }
+
+#hd .wijmo-wijmenu .wijmo-wijmenu-link {
+    color: #fafafa;
+    font-size: 1.2em;
+    line-height: 1;
+    margin: 5px .25em 0;
+    outline: none;
+    padding: .75em;
+    text-decoration: none;
+    border: none;
+}
+
+#hd #mainMenuContainer .wijmo-wijmenu .wijmo-wijmenu-link:hover {
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    background: #686868;
+    border-radius: 3px 3px 0 0;
+    color: #fff;
+}
+
+#hd #mainMenuContainer .wijmo-wijmenu .currentmenu {
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    background: #04b2ef;
+    border-radius: 3px 3px 0 0;
+    color: #fff;
+    font-weight: 700;
+}
+
+    #hd #mainMenuContainer .wijmo-wijmenu .currentmenu:hover {
+        background: #04b2ef;
+    }
+
+
+#hd #mainMenuContainer .wijmo-wijmenu .wijmo-wijmenu-link:hover, #hd #mainMenuContainer .wijmo-wijmenu .wijmo-wijmenu-link:focus {
+    outline: none;
+}
+
+#hd #subMenuContainer .wijmo-wijmenu {
+    background: #04b2ef;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+    #hd #subMenuContainer .wijmo-wijmenu .wijmo-wijmenu-list {
+        width: 950px;
+        margin: 0 auto;
+    }
+
+    #hd #subMenuContainer .wijmo-wijmenu .wijmo-wijmenu-link {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        background: none;
+        border: none;
+        box-shadow: none;
+        color: #fff;
+        font-size: 1.15em;
+        margin: 0 .1em;
+        outline: none;
+        padding: .5em .25em;
+        text-decoration: none;
+    }
+
+    #hd #subMenuContainer .wijmo-wijmenu .currentsubmenu {
+        color: #fff;
+        font-weight: 700;
+    }
+
+#hd .hd-links {
+    height: 16px;
+    line-height: 16px;
+    padding: 3px;
+}
+
+    #hd .hd-links a:link, #hd .hd-links a, #hd .hd-links a:hover, #hd .hd-links a:active, #hd .hd-links a:focus, #hd .hd-links a:visited {
+        color: #fafafa;
+        text-shadow: 0 0 3px #333;
+    }
+
+#hd .hd-links-wrapper .hd-links {
+    text-align: right;
+}
+
+    #hd .hd-links-wrapper .hd-links ul li {
+        color: #fff;
+        display: inline;
+        list-style: none outside none;
+        padding-right: 5px;
+    }
+
+    #hd .hd-links-wrapper .hd-links .hd-ico-register {
+        background: url(/images/ico-register.gif) no-repeat scroll 0 2px transparent;
+        padding-left: 20px;
+    }
+
+    #hd .hd-links-wrapper .hd-links .hd-ico-login {
+        background: url(/Images/ico-login.png) no-repeat scroll 0 2px transparent;
+        padding-left: 20px;
+    }
+
+    #hd .hd-links-wrapper .hd-links .hd-ico-cart {
+        background: url(/Images/ico-cart.png) no-repeat scroll 0 2px transparent;
+        padding-left: 20px;
+    }
+
+.content {
+    margin: 0;
+    padding: 0;
+}
+
+.quart {
+    float: left;
+    width: 25%;
+}
+
+.working {
+    -moz-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    background: #fff;
+    border-radius: 5px;
+    bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    display: block;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    z-index: 999;
+}
+
+.SubCategory .wijmo-wijcarousel-item a {
+    background: #fff;
+    display: block;
+    float: left;
+    margin: 1em;
+}
+
+    .SubCategory .wijmo-wijcarousel-item a .SubCategoryChart {
+        margin: 1em;
+    }
+
+body .wijmo-wijtooltip-pointer {
+    border-color: #85b2cb;
+    border-width: 1px;
+}
+
+    body .wijmo-wijtooltip-pointer .wijmo-wijtooltip-pointer-inner {
+        border-top-color: #f2f2f2 !important;
+    }
+
+
+.OrderProgress {
+    height: 40px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+    .OrderProgress ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        .OrderProgress ul li {
+            display: inline;
+            list-style: none;
+            padding: 5px 20px 0;
+        }
+
+            .OrderProgress ul li .ActiveStep {
+                background: url(/Images/progress-step-active.gif) no-repeat 50% 50%;
+                color: #6a6a6a;
+                padding-bottom: 40px;
+                padding-right: 1px;
+            }
+
+            .OrderProgress ul li .InactiveStep {
+                background: url(/Images/progress-step-inactive.gif) no-repeat 50% 50%;
+                color: #d7d7d7;
+                padding-bottom: 40px;
+                padding-right: 1px;
+            }
+
+.sidebar {
+    -moz-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    background: #E8EAEE;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    margin: .5em 0 .5em .5em;
+    min-height: 300px;
+    padding: .5em;
+}
+
+.loading {
+    -moz-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    background: #ff9 url(/Images/FadeLightShort.png) repeat-x top left;
+    border: solid 1px #fc0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    font-size: 1.2em;
+    line-height: 1;
+    margin: 3px;
+    outline: none;
+    padding: 4px;
+}
+
+.error {
+    -moz-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    background: #ff9 url(/Images/FadeLightShort.png) repeat-x top left;
+    border: solid 1px #fc0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    color: #900;
+    font-size: .9em;
+    line-height: 1;
+    margin: 3px;
+    outline: none;
+    padding: 4px;
+}
+
+.grid {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: solid 1px #999;
+    border-radius: 5px;
+}
+
+    .grid > table {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .grid th, .grid td {
+        border: none;
+        border-collapse: collapse;
+    }
+
+    .grid th {
+        font-size: 1.2em;
+        line-height: 1;
+    }
+
+    .grid > table > tbody > tr:nth-child(odd) {
+        background: #E8EAEE;
+    }
+
+    .grid > table > tbody > tr:hover {
+        background: #0cf url(/Images/FadeLightShort.png) repeat-x top left;
+    }
+
+.flowlist li {
+    display: block;
+    float: left;
+    margin: .2em;
+    padding: .5em;
+}
+
+.products li {
+    height: 120px;
+    text-align: center;
+    width: 140px;
+}
+
+.SubCategoryName {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.island {
+    background: transparent url(/Images/island.png) no-repeat center center;
+    display: block;
+    height: 580px;
+    margin: 0 auto;
+    position: absolute;
+    top: 120px;
+    width: 960px;
+}
+
+    .island h1 {
+        color: #fff;
+        cursor: pointer;
+        font-style: italic;
+        font-weight: 700;
+        text-shadow: 0 0 10px #000;
+    }
+
+.mountain {
+    background: transparent url('images/mountain.png') no-repeat left;
+    cursor: pointer;
+    display: block;
+    height: 142px;
+    left: 698px;
+    position: absolute;
+    top: 135px;
+    width: 257px;
+}
+
+.road {
+    background: transparent url(/Images/road.png) no-repeat left;
+    cursor: pointer;
+    height: 132px;
+    left: 390px;
+    position: absolute;
+    top: 172px;
+    width: 219px;
+}
+
+.touring {
+    background: transparent url(/Images/touring.png) no-repeat left;
+    cursor: pointer;
+    display: block;
+    height: 227px;
+    left: 221px;
+    position: absolute;
+    top: 39px;
+    width: 191px;
+    z-index: 2;
+}
+
+.island .mountain_tooltip h1 {
+    margin: 0 auto;
+    padding: 26px 0;
+    width: 83px;
+}
+
+.island .road_tooltip h1 {
+    margin: 0 auto;
+    padding: 26px 0;
+    width: 73px;
+}
+
+.island .touring_tooltip h1 {
+    margin: 0 auto;
+    padding: 26px 0;
+    width: 42px;
+}
+
+.mountain_tooltip {
+    background: transparent url(/Images/mountain_tooltip.png) no-repeat top;
+    display: block;
+    height: 130px;
+    left: 790px;
+    position: absolute;
+    top: 103px;
+    width: 157px;
+    z-index: 1;
+}
+
+.road_tooltip {
+    background: transparent url(/Images/road_tooltip.png) no-repeat top;
+    display: block;
+    height: 130px;
+    left: 426px;
+    position: absolute;
+    top: 123px;
+    width: 173px;
+    z-index: 1;
+}
+
+.touring_tooltip {
+    background: transparent url(/Images/touring_tooltip.png) no-repeat top;
+    display: block;
+    height: 130px;
+    left: 97px;
+    position: absolute;
+    top: 96px;
+    width: 157px;
+    z-index: 1;
+}
+
+.bikes_button {
+    background: transparent url(/Images/home_tooltip_noarrow.png) no-repeat center center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 700;
+    height: 49px;
+    line-height: 49px;
+    padding: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 9999;
+}
+
+    .bikes_button a {
+        color: #fff;
+    }
+
+    .bikes_button:hover {
+        background: transparent url(/Images/home_tooltip_hover.png) no-repeat center center;
+    }
+
+a:hover .mountain {
+    background: transparent url(/Images/mountain.png) no-repeat right;
+}
+
+a:hover .road {
+    background: transparent url(/Images/road.png) no-repeat right;
+}
+
+a:hover .touring {
+    background: transparent url(/Images/touring.png) no-repeat right;
+}
+
+.C1ChartContainer {
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -20px;
+    width: 200px;
+}
+
+.chartlabel {
+    color: #04b2ef;
+    font-size: .8em;
+}
+
+.SubCategory .C1PreviousButton {
+    background: transparent url(/Images/arrow_left.png) no-repeat center;
+    display: block;
+    float: left;
+    height: 32px;
+    left: -40px;
+    position: absolute;
+    top: 95px;
+    width: 29px;
+}
+
+.SubCategory .C1NextButton {
+    background: transparent url(/Images/arrow_right.png) no-repeat center;
+    display: block;
+    float: right;
+    height: 32px;
+    position: absolute;
+    right: -40px;
+    top: 95px;
+    width: 29px;
+}
+
+.Components #hd #doc2, .Clothing #hd #doc2, .Accessories #hd #doc2 {
+    height: 150px;
+}
+
+.Bikes #hd {
+    background: #646464 url(/Images/bikes_header.png) no-repeat top center;
+}
+
+.MountainBikes #hd {
+    background: #646464 url(/Images/mountains_header.png) no-repeat top center;
+}
+
+.RoadBikes #hd {
+    background: #646464 url(/Images/road_header.png) no-repeat top center;
+}
+
+.TouringBikes #hd {
+    background: #646464 url(/Images/touring_header.png) no-repeat top center;
+}
+
+.Bikes #hd #doc2 {
+    height: 300px;
+}
+
+.ToolTipLabelName {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.ToolTipLabelPrice {
+    background: #04b2ef;
+    color: #fff;
+    float: right;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 700;
+    text-align: right;
+    margin: 7px 0;
+    padding: 5px;
+    width: 40%;
+}
+
+.ToolTipTable {
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+.description {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+    .description li {
+        float: left;
+        list-style: none;
+        width: 50%;
+    }
+
+.C1ttScrollContainer {
+    position: relative;
+    top: -20px;
+}
+
+.content .BackButton, .content .NextButton,
+.content .ShoppingCartContinueButton, .content .ShoppingCartCheckOutButton,
+.ButtonContainer .ButtonContinue, .ButtonContainer .ButtonCheckOut,
+.content .LoginButton, .content .SignUpButton,
+.wijmo-wijgrid-innercell input[type='button'], .wijmo-wijgrid-innercell input[type='submit'] {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #04b2ef;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.ButtonContinue {
+    margin: 0 0 0 5px;
+}
+
+.content .ShoppingCartContinueButton, .content .ShoppingCartCheckOutButton {
+    float: none;
+}
+
+    .content .BackButton:hover, .content .NextButton:hover,
+    .content .ShoppingCartContinueButton:hover, .content .ShoppingCartCheckOutButton:hover,
+    .ButtonContainer .ButtonContinue:hover, .ButtonContainer .ButtonCheckOut:hover,
+    .content .LoginButton:hover, .content .SignUpButton:hover,
+    .wijmo-wijgrid-innercell input[type='submit']:hover, .wijmo-wijgrid-innercell input[type='button']:hover {
+        background: #00a4db;
+    }
+
+    .content .BackButton:active, .content .NextButton:active,
+    .content .ShoppingCartContinueButton:active, .content .ShoppingCartCheckOutButton:active,
+    .ButtonContainer .ButtonContinue:active, .ButtonContainer .ButtonCheckOut:active,
+    .content .LoginButton:active, .content .SignUpButton:active,
+    .wijmo-wijgrid-innercell input[type='submit']:active, .wijmo-wijgrid-innercell input[type='button']:active {
+        background: #007aa3;
+        outline: none;
+    }
+
+.buttonbox {
+    float: right;
+    height: 32px;
+    line-height: 32px;
+    width: 300px;
+}
+
+    .buttonbox h2 {
+        margin: 0 5px;
+        text-align: right;
+    }
+
+.hd-ico-cartItems {
+    -moz-border-radius: 0 0 3px 3px;
+    -moz-box-shadow: 0 0 3px #333;
+    -webkit-border-radius: 0 0 3px 3px;
+    -webkit-box-shadow: 0 0 3px #333;
+    background: rgba(0,0,0,0.5);
+    border: solid 1px #000;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 0 3px #333;
+    color: #fff;
+    font-weight: 700;
+    padding: 3px 8px;
+}
+
+.ShoppingFooter {
+    clear: both;
+    padding: 5px;
+    text-align: right;
+}
+
+.cartinfo h6, .cartinfo .item {
+    height: 30px;
+    line-height: 24px;
+}
+
+.cartinfo h6 {
+    border-top: dashed 1px #cbcbcb;
+    float: left;
+    font-weight: 700;
+    margin: 0 20px 0 0;
+    text-align: right;
+    width: 85%;
+}
+
+.cartinfo .alt {
+    background: #fafafa;
+}
+
+.totalinner {
+    background: #333;
+    border-bottom: solid 3px #04b2ef;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 0 19px 0 0;
+    width: 94px;
+}
+
+.total h6 {
+    background: #333;
+    border-bottom: solid 3px #04b2ef;
+    border-top: none;
+    color: #fff;
+    margin: 0;
+    padding: 0 20px 0 0;
+}
+
+
+body .wijmo-wijdialog .ui-dialog-content {
+    width: 580px !important;
+}
+
+
+.ShoppingCartFrame {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.WindowShoppingCartProductName {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    width: 50%;
+}
+
+.ProductMsg {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #FBF9EE;
+    border: 1px solid #FCEFA1;
+    border-radius: 4px;
+    color: #363636;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0 0 1em;
+    padding: 5px;
+}
+
+#c1modallayer {
+    opacity: 0.5 !important;
+}
+
+.ShoppingCartFrame .C1GridView_Windows7 {
+    margin: 15px 0 20px;
+}
+
+.MainProductImage {
+    -moz-border-radius: 4px;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    background: #fff;
+    border: solid 1px #999;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #ccc;
+    float: left;
+    margin: 10px auto;
+    padding: 10px;
+    width: 36%;
+}
+
+.ProductDescription {
+    float: right;
+    width: 58%;
+}
+
+    .ProductDescription h1 {
+        border-bottom: solid 3px #04b2ef;
+        color: #333;
+        font-size: 1.5em;
+        font-weight: 700;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+.ProductPrice {
+    background: #04b2ef;
+    color: #fff;
+    font-size: 1.25em;
+    height: 33px;
+    line-height: 33px;
+    margin: 0;
+    padding: 5px;
+    *width: 398px;
+}
+
+.ProductSpecsContainer {
+    float: left;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.ProductPrice .LoginButton {
+    *position: relative;
+    *top: -34px;
+}
+
+.ProductSpecsContainer li {
+    background: #ddd;
+    border: solid 1px #ccc;
+    float: left;
+    list-style: none;
+    margin: 3px 0;
+    padding: 10px 5px;
+    width: 71%;
+}
+
+
+
+    .ProductSpecsContainer li:hover {
+        background: #04b2ef;
+        color: #fff;
+    }
+
+.ProductSpecsContainer .ProductSpecsColorLabel, .ProductSpecsContainer .ProductSpecsSizeLabel, .ProductSpecsContainer .ProductSpecsWeightLabel {
+    background: none;
+    border: none;
+    font-weight: 700;
+    text-align: left;
+    width: 23%;
+}
+
+    .ProductSpecsContainer .ProductSpecsColorLabel:hover, .ProductSpecsContainer .ProductSpecsSizeLabel:hover, .ProductSpecsContainer .ProductSpecsWeightLabel:hover {
+        background: none;
+        color: #333;
+    }
+
+.ProductModelContainer .ProductModelSizeLabel {
+    background: none;
+    border: none;
+    border-top: dashed 1px #ccc;
+    color: #333;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+body .wijmo-wijexpander {
+    border: none;
+    background-color: #04b2ef;
+    border-radius: 4px;
+}
+
+    body .wijmo-wijexpander .ui-expander-header {
+        border: none;
+        background: #ffac00;
+    }
+
+#ft .wijmo-wijexpander .ui-expander-header a, #ft .wijmo-wijexpander .ui-expander-header a:link, .wijmo-wijexpander .ui-expander-header a, .wijmo-wijexpander .ui-expander-header a:link {
+    color: #fff;
+}
+
+.wijmo-wijexpander h3 {
+    margin: 0;
+}
+
+
+.C1eContent {
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    background: #fafafa;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden !important;
+    padding: 5px;
+}
+
+.yui-ge .yui-u, .yui-gf div.first {
+    background: #ddd;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.yui-ge div.first, .yui-gf .yui-u {
+    width: 74.2%;
+}
+
+.Filter h3 {
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    background: #04b2ef;
+    border-radius: 4px 4px 0 0;
+    clear: both;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 5px;
+}
+
+.C1ColorComboContainer, .C1SizeSliderContainer, .C1WeightComboContainer {
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    margin: 0 0 10px;
+    padding: 5px;
+}
+
+.currentsize {
+    background: #04b2ef;
+    color: #fff;
+    padding: 0 3px;
+}
+
+.wijmo-wijslider-horizontal {
+    background: transparent url(/Images/grid.png) no-repeat center;
+    float: none;
+    margin: 0 auto;
+}
+
+    .wijmo-wijslider-horizontal .ui-slider-horizontal {
+        height: 5px !important;
+        border-radius: 0;
+        top: 5px !important;
+    }
+
+        .wijmo-wijslider-horizontal .ui-slider-horizontal .ui-slider-handle {
+            border-radius: 0;
+        }
+
+.ListProductsImage {
+    background: #fff;
+    border: solid 1px #ccc;
+    display: block;
+    margin: 10px auto;
+    padding: 20px;
+    width: 110px;
+}
+
+.ListProductHeader {
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    top: -10px;
+    width: 142px;
+    z-index: 999;
+}
+
+.C1pvContent {
+    background: #fff;
+    min-height: 548px;
+    padding: 7px 3px;
+}
+
+.SubCategory .C1pvContent {
+    min-height: 100px;
+    padding: 0;
+}
+
+.C1pvOuter {
+    background: transparent url(/Images/multipage_shadow.png) no-repeat center bottom;
+    padding-bottom: 17px;
+}
+
+.CheckOutFooter .right {
+    float: right;
+    margin: 3px;
+}
+
+.SubCategory .yui-gc div.first, .yui-gd .yui-u {
+    width: 100%;
+}
+
+.Components .C1ChartContainer, .Clothing .C1ChartContainer, .Accessories .C1ChartContainer {
+    display: none;
+    visibility: hidden;
+}
+
+.C1Link .C1PreviousButton {
+    background: transparent url(/Images/arrow_left.png) no-repeat center;
+    display: block;
+    float: left;
+    height: 32px;
+    width: 32px;
+}
+
+.C1Link .C1NextButton {
+    background: transparent url(/Images/arrow_right.png) no-repeat center;
+    display: block;
+    float: right;
+    height: 32px;
+    width: 32px;
+}
+
+.C1PageInfo {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+}
+
+.BikesMenu, .ComponentsMenu, .ClothingMenu, .AccessoriesMenu {
+    float: left;
+    width: 25%;
+}
+
+.copyright {
+    background: #04b2ef;
+    border-top: solid 3px #04b2ef;
+    clear: both;
+}
+
+.copyrightinner {
+    color: #fafafa;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: right;
+    width: 960px;
+}
+
+.c1logo {
+    float: right;
+    width: 30%;
+}
+
+.copyrighttext {
+    float: left;
+    width: 70%;
+}
+
+#ft h1 {
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#ft a:link, #ft a, .copyright a:link, .copyright a {
+    color: #ffac00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+
+.homepage #hd #mainMenuContainer, .homepage #hd #subMenuContainer, .islandcontainer, .ToolTipLabelSpecs, .C1Window .C1wHeading, .C1Window .C1wFooter, .ProductModelDescriptionValue {
+    display: none;
+}
+
+#hd .hd-links-wrapper .hd-links ul, .C1Window .C1GridView_Windows7, .BikesMenu ul, .ComponentsMenu ul, .ClothingMenu ul, .AccessoriesMenu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.SubCategory .C1MultiPage, .bikes_button h1, #ctl00_MainContent_ctl00_statExpander_hdr .C1eContent, #ctl00_MainContent_ctl00_statExpander_cnt .C1eContent, .C1WeightComboContainer {
+    margin: 0;
+}
+
+.SubCategory, .ListProductBlock {
+    position: relative;
+}
+
+.flowlist, .BikesMenu li, .ComponentsMenu li, .ClothingMenu li, .AccessoriesMenu li {
+    list-style: none;
+}
+
+.island a:hover, .bikes_button a:hover {
+    text-decoration: none;
+}
+
+.remember, .cartinfo .item, .ProductImage {
+    float: left;
+}
+
+.ProductTab, .DescriptionContainer {
+    clear: both;
+    margin: 10px 0;
+}
+
+.CheckOutFooter, .BillAddress, .clear {
+    clear: both;
+}
+
+.RegisterBlock, .ShippingInfo, .ShipTo, .PaymentInfo,
+.LoginBlock, .BillInfo, .ShippingDate, .BillTo {
+    margin-top: 10px;
+    float: right;
+    width: 48%;
+}
+
+.LoginBlock, .BillInfo, .ShippingDate, .BillTo {
+    float: left;
+}
+
+    .LoginBlock label, .RegisterBlock label {
+        font-style: italic;
+        font-size: 1.1em;
+        white-space: normal;
+    }
+
+    .LoginBlock input, .RegisterBlock input {
+        padding: 3px 0;
+    }
+
+    .LoginBlock li, .RegisterBlock li, .BillInfo li,
+    .PaymentInfo li, .ShippingInfo li, .BillTo li,
+    .ShipTo li {
+        margin: 5px 0;
+        float: left;
+        list-style: none;
+        width: 50%;
+    }
+
+.RegisterBlock li {
+    white-space: nowrap;
+}
+
+.PaymentInfo li {
+    width: 100%;
+}
+
+.LoginBlock fieldset, .RegisterBlock fieldset, .BillInfo fieldset,
+.PaymentInfo fieldset, .ShippingDate fieldset, .ShippingInfo fieldset,
+.BillTo fieldset, .ShipTo fieldset {
+    border: solid 1px #cacaca
+}
+
+.LoginBlock legend, .RegisterBlock legend, .BillInfo legend,
+.PaymentInfo legend, .ShippingDate legend, .ShippingInfo legend,
+.BillTo legend, .ShipTo legend {
+    font-size: 1.5em;
+}
+
+.PaymentCard input[type='radio'] ~ label, .ShippingInfo input[type='checkbox'] ~ label {
+    display: inline;
+    margin-left: 10px;
+}
+
+.ShipFirstName, .ShipLastName, .BillFirstName, .BillLastName {
+    font-size: 1.5em;
+}
+
+.BillTo .CreditCardType, .BillTo .CreditCardNumber, .BillTo .CreditCardExpire {
+    float: left;
+    font-style: italic;
+    margin: 5px 5px 5px 0;
+}
+
+.ui-datepicker .ui-datepicker-calendar a.ui-state-active {
+    background: #00a4db;
+}
+
+.iconremove {
+    height: 16px !important;
+    background: url(/images/icon_remove.png) no-repeat center center !important;
+}

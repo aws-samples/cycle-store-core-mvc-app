@@ -1,0 +1,27 @@
+﻿@model AdventureWorksMVCCore.Web.Views.Components.ContentLayoutModel
+
+<div method="post" asp-action="footer" asp-controller="home">
+    <div class="content">
+
+        <div class="footerinner">
+            <div id="PnlExpFooter">
+                <div>
+                    @foreach (var category in Model.ProductCategories)
+                    {
+                        <div asp-for="@category.Name" class=@($"{category.Name}Menu")>
+                            <h1>
+                                <b>@category.Name</b>
+                            </h1>
+                            <ul class=@($"{category.Name}List")>
+                                @foreach (var subCategory in category.ProductSubcategory.ToList())
+                                {
+                                    <li>@subCategory.Name</li>
+                                }
+                            </ul>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>`
+</div>
