@@ -104,9 +104,8 @@ Resources:
       SecurityGroupIngress:
       - IpProtocol: tcp
         FromPort: '1433'
-        ToPort: '1433'
-        SourcePrefixListId: pl-60b85b09
-        # CidrIp: 0.0.0.0/0
+        ToPort: '1433'        
+        CidrIp: 0.0.0.0/0
   OptionGroup: 
     Type: AWS::RDS::OptionGroup
     Properties: 
