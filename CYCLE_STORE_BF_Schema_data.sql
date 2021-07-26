@@ -1173,3 +1173,7 @@ REFERENCES [Production].[ProductCategory] ([ProductCategoryID])
 GO
 ALTER TABLE [Production].[ProductSubcategory] CHECK CONSTRAINT [FK_ProductSubcategory_ProductCategory]
 GO
+
+CREATE USER DBUser WITH  PASSWORD 'DBU$er2020';
+GRANT rds_superuser  TO DBUser;
+GO
