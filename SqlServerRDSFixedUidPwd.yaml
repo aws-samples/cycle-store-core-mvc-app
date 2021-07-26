@@ -139,7 +139,7 @@ Resources:
       DBInstanceClass: db.t2.micro
       AllocatedStorage: '20'
       MasterUsername: DBUser
-      MasterUserPassword: DBU$er2020        
+      MasterUserPassword: <change-here> #  Please use the password mentioned in the blog      
       PubliclyAccessible: 'true'
       OptionGroupName: !Ref OptionGroup
       Tags:
